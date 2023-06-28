@@ -3,7 +3,7 @@ import morgan from "morgan";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import path from "path";
-import router from "./routes/userROutes.js";
+// import router from "./routes/userROutes.js";
 
 const app=express();
 dotenv.config();
@@ -15,7 +15,7 @@ const __dirname=path.resolve();
 
 app.use(morgan('dev'));
 app.use(express.json());
-app.use('/',router);
+// app.use('/',router);
 
 app.get("/ping",(req,res)=>{
     return res.sendFile(__dirname+'/public/index.html');
