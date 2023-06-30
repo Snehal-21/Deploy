@@ -14,6 +14,8 @@ app.use(express.urlencoded({extended:true}));
 const __dirname=path.resolve();
 
 app.use(morgan('dev'));
+
+
 app.use(express.json());
 // app.use('/',router);
 
